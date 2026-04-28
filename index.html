@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC情報メモ | パソコン選びと自作PCの記録</title>
+<meta name="description" content="パソコン選び、ゲーミングPC、BTOパソコン、自作PCに関する個人的な記録と情報メモ。">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --border: #e8e6e0;
+  --accent: #c2410c;
+  --accent-soft: #fef2eb;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+               "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+
+/* ヘッダー */
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+  margin-bottom: 48px;
+}
+
+.site-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* セクション */
+section {
+  margin-bottom: 56px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+p {
+  margin-bottom: 16px;
+  color: #2a2a2a;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: opacity 0.15s;
+}
+
+a:hover { opacity: 0.7; }
+
+/* メインプロジェクトカード */
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.project-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.project-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-title a:hover { color: var(--accent); }
+
+.project-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.project-link {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* トピックリスト */
+.topic-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.topic-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 14px;
+}
+
+.topic-list li::before {
+  content: "▸ ";
+  color: var(--accent);
+  margin-right: 4px;
+  font-weight: 700;
+}
+
+/* フッター */
+footer {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  margin-top: 60px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+footer a { color: var(--text-muted); }
+
+/* モバイル */
+@media (max-width: 600px) {
+  .container { padding: 40px 20px 60px; }
+  h1 { font-size: 26px; }
+  h2 { font-size: 18px; }
+  body { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="site-name">PC INFO MEMO</div>
+  <h1>パソコン選びと自作PCの記録</h1>
+  <p class="tagline">日々のパソコン情報、レビュー、技術メモを残すための個人ページです。</p>
+</header>
+
+<section>
+  <h2>このサイトについて</h2>
+  <p>
+    パソコンに関する情報を発信している個人の記録ページです。
+    ゲーミングPC、ノートパソコン、BTOパソコンなど、用途別のPC選びについて
+    日々調べたことや実際に使ってみた感想を整理しています。
+  </p>
+  <p>
+    詳しい比較記事や最新セール情報は、メインで運営している
+    <a href="https://pc-selects.com/" target="_blank" rel="noopener">パソコンセレクト</a>
+    にて公開しています。
+  </p>
+</section>
+
+<section>
+  <h2>運営メディア</h2>
+
+  <div class="project-card">
+    <span class="project-label">MAIN PROJECT</span>
+    <h3 class="project-title">
+      <a href="https://pc-selects.com/" target="_blank" rel="noopener">
+        パソコンセレクト
+      </a>
+    </h3>
+    <p class="project-desc">
+      全20社以上のパソコンメーカーを比較し、用途・予算・スペックから
+      最適な一台を見つけるためのPC情報メディアです。
+      ゲーミングPC、ノートPC、BTOパソコンの詳細レビュー、
+      毎日更新のセール速報を発信しています。
+    </p>
+    <p class="project-link">
+      <a href="https://pc-selects.com/" target="_blank" rel="noopener">
+        pc-selects.com を見る →
+      </a>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>よく書いているトピック</h2>
+  <ul class="topic-list">
+    <li>
+      ゲーミングPCのメーカー比較 ―
+      <a href="https://pc-selects.com/gaming/" target="_blank" rel="noopener">ゲーミングPC比較記事</a>
+    </li>
+    <li>
+      ノートパソコン選びのポイント ―
+      <a href="https://pc-selects.com/entry-laptop/" target="_blank" rel="noopener">ノートPCメーカー比較</a>
+    </li>
+    <li>
+      BTOメーカーの違いと選び方 ―
+      <a href="https://pc-selects.com/entry-bto/" target="_blank" rel="noopener">BTOパソコン比較</a>
+    </li>
+    <li>
+      RTXシリーズのベンチマーク ―
+      <a href="https://pc-selects.com/graphic/" target="_blank" rel="noopener">グラフィックボード解説</a>
+    </li>
+    <li>
+      最新のPCセール情報 ―
+      <a href="https://pc-selects.com/sale/" target="_blank" rel="noopener">セール速報</a>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>更新について</h2>
+  <p>
+    このページは個人的なメモとして不定期に更新しています。
+    詳しい比較記事やレビューは
+    <a href="https://pc-selects.com/" target="_blank" rel="noopener">パソコンセレクト</a>
+    で公開していますので、PC選びで迷ったときはぜひご覧ください。
+  </p>
+</section>
+
+<footer>
+  <p>
+    Hosted on GitHub Pages ・
+    <a href="https://pc-selects.com/" target="_blank" rel="noopener">pc-selects.com</a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
